@@ -1,3 +1,11 @@
+### Start Preamble
+SHELL := bash
+.ONESHELL:
+.SHELLFLAGS := -eu -o pipefail -c
+.DELETE_ON_ERROR:
+MAKEFLAGS += --warn-undefined-variables
+### End Preamble
+
 BUILD_DIR := build
 SRC_DIR := src
 
